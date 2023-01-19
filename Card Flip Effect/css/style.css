@@ -1,0 +1,32 @@
+html, body{
+    min-height: 400px;
+  }
+  
+  .flip-container {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+  }
+  
+  .flipper {
+    position: relative;
+      width: 50%;
+      height: 50%;
+    transition: transform 0.8s;
+      transform-style: preserve-3d;
+  }
+  
+  .flip-container:hover .flipper{
+      transform: rotateY(180deg);
+  }
+  
+  .front, .back{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    backface-visibility: hidden;
+  }
+  
+  .back{
+    transform: rotateY(180deg);
+  }
