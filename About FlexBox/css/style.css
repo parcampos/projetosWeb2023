@@ -1,4 +1,42 @@
+* {
+    margin: 5px;
+    padding: 5px;
+}
 .container {
     display: flex;
+    
+}
+.container > div {
+    width: 50px;
+   
+    background-color: brown;
+    margin: 10px;;
+}
+.flex-row {
+    
+    flex-direction: row;
+}
+.flex-row-reverse {
+    
+    flex-direction: row-reverse;
+}
+.flex-column {
+    
+    flex-direction: column;
+}
+.flex-column-reverse{
+    
     flex-direction: column-reverse;
+}
+.wrap {
+    
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.wrap-reverse {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+.flex-flow-row-wrap {
+    flex-flow: row wrap;
 }
