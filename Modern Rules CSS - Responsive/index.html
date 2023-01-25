@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Rules CSS - Responsive</title>
+    <style>
+        /*old method */
+        /* .container {
+            border: 1px solid red;
+            max-width: 840px;
+            margin: 0 auto;
+            padding: 0 15px;
+        } */
+
+        /*new method */
+        .container {
+            width: min(100%-30px,840px);
+            margin-inline: 30px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        container
+    </div>
+</body>
+</html>
